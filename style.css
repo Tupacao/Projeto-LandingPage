@@ -118,14 +118,11 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: url('/2e15bd57e0983f6d3c0063b2332796be.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
     margin-bottom: 20px;
 }
 
 .nome{
-    margin: auto 0px;
+    margin: auto;
     width: 50%;
 }
 
