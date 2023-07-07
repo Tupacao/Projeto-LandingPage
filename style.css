@@ -1,0 +1,368 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #3a3a3a;
+}
+
+/* Cabeçalho */
+
+header{
+    color: white;
+}
+
+.contatos{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contatos i{
+    margin-left: 15px;
+}
+
+.navegacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navegacao .links{
+    margin: auto 0px;
+}
+
+.navegacao .links ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navegacao .links ul li{
+    margin-right: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navegacao .links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navegacao .links ul li:hover{
+    text-decoration: underline;
+}
+
+
+.whatssap{
+    color: lightgreen;
+}
+
+.whatssap:hover{
+    animation-name: aumentar;
+    animation-duration: 2s;
+}
+
+.barra{
+    display: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+#barra2{
+    display: none;
+    margin: auto;
+    text-align: center;
+}
+
+#barra2 li{
+    list-style-type: none;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+#barra2 li a{
+    text-decoration: none;
+    color: white;
+}
+
+.open{
+    display: block;
+}
+
+
+/* topo section */ 
+
+section{
+    margin-top: 50px;
+}
+
+.topo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nome{
+    margin: auto 0px;
+    width: 50%;
+}
+
+.nome h1,h4{
+    margin-bottom: 10px;
+}
+
+.nome .botoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.nome .botoes h2{
+    font-size: 20px;
+    margin: 20px 20px;
+    background-color:#cfcece;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.nome .botoes h2:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.mapa{
+    margin: auto;
+}
+
+/* topo nos escolher */
+
+.diferencial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 150px auto;
+}
+
+
+.escolher{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.escolher div{
+    width: 50%;
+    margin: 10px auto;
+}
+
+.quadrados{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.qua1{
+    background-color: white;
+    width: 45%;
+    padding: 10px;
+}
+
+.qua1 i, h2, h5{
+    margin: 15px 10px;
+}
+
+.qua1 h5{
+    font-size: 15px;
+}
+
+
+/* metades */
+
+.metade{
+    margin: 100px 0px;
+    text-align: center;
+}
+
+.metade div {
+    width: 10%;
+    margin: 10px auto;
+}
+
+/* serviços */
+
+.servicos{
+    margin: auto;
+}
+
+.servicos h2{
+    font-size: 35px;
+    width: 70%;
+    margin: auto;
+}
+
+.servicos .ladinho{
+    width: 70%;
+    margin: 20px auto;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lado-1{
+    width: 40%;
+}
+
+.lado-2{
+    width: 40%;
+}
+
+.ladinho hr{
+    margin: 10px 0px;
+}
+
+.ladinho dt{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer */
+
+footer{
+    background-color: #cfcece;
+}
+
+.primeira{
+    margin: 100px auto;
+    text-align: center;
+}
+
+.primeira h3 {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+.tempo h1{
+    margin: auto;
+    text-align: start;
+    width: 50%;
+}
+
+.descricao {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.descricao ul{
+    list-style-type: none;
+    text-align: start;
+}
+
+.botao{
+    padding: 10px;
+    background-color: #3a3a3a;
+    color: white;
+    width: 25%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.segunda ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 10px;
+}
+
+.segunda ul li{
+    margin-right: 10px;
+}
+
+.linha{
+    max-width: 40%;
+    margin: 20px auto;
+}
+
+.segunda li{
+    cursor: pointer;
+}
+
+.segunda{
+    padding-bottom: 10px;
+}
+
+/* keyframes */
+
+@keyframes aumentar {
+    0%{}
+    100%{transform: scale(1.05);}
+}
+
+
+
+/* Queery */
+
+@media (max-width: 1100px) {
+    .navegacao .links ul li{
+        display: none;
+    }
+
+    .navegacao .links ul .whatssap{
+        display: flex;
+    }
+
+    .barra{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .primeira h3 {
+        margin: auto;
+        width: 80%;
+        margin-bottom: 100px;
+    }
+
+    .nome{
+        margin: auto 0px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 850px) {
+    .contatos{
+        display: block;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    
+    .navegacao .links ul .whatssap{
+        display: none;
+    }
+
+    .qua1{
+        background-color: white;
+        width: 90%;
+        padding: 10px;
+    }
+}
