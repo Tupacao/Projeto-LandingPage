@@ -18,8 +18,8 @@ header{
 .contatos{
     display: none;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 50px;
+    justify-content: center;
 }
 
 .contatos i{
@@ -72,6 +72,17 @@ header{
     cursor: pointer;
 }
 
+/*
+.prender{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    background-color: #3a3a3a;
+    width: 40%;
+    margin: auto;
+} 
+*/
+
 #barra2{
     display: none;
     margin: auto;
@@ -93,6 +104,9 @@ header{
     display: block;
 }
 
+.logo{
+    margin: 20px auto;
+}
 
 /* topo section */ 
 
@@ -107,6 +121,7 @@ section{
     background-image: url('/2e15bd57e0983f6d3c0063b2332796be.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-bottom: 20px;
 }
 
 .nome{
@@ -154,7 +169,7 @@ section{
 
 .escolher{
     text-align: center;
-    margin: auto;
+    margin: 30px auto;
     padding: 10px;
 }
 
@@ -348,6 +363,19 @@ footer{
         margin: auto 0px;
         width: 90%;
     }
+
+    .descricao {
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .tempo h1{
+        margin: auto;
+        text-align: start;
+        width: 80%;
+    }
 }
 
 @media (max-width: 850px) {
@@ -368,4 +396,14 @@ footer{
         width: 90%;
         padding: 10px;
     }
+
+    .lado-1{
+        width: 80%;
+    }
+    
+    .lado-2{
+        width: 80%;
+    }
+    
+    
 }
