@@ -56,6 +56,9 @@ header{
 
 .whatssap{
     color: lightgreen;
+    border: solid lightgreen;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .whatssap:hover{
@@ -105,6 +108,13 @@ header{
     margin: 20px auto;
 }
 
+/* Botao abrir fechar */
+
+.prender{
+    margin-bottom: 150px;
+}
+
+
 /* topo section */ 
 
 section{
@@ -115,12 +125,13 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 200px;
 }
 
 .nome{
     margin: auto;
     width: 50%;
+    text-align: justify;
 }
 
 .nome h1,h4{
@@ -147,6 +158,11 @@ section{
     transition: 1s;
 }
 
+.nome p{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
 .mapa{
     margin: auto;
 }
@@ -157,13 +173,13 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 150px auto;
+    margin: 250px auto;
 }
 
 
 .escolher{
     text-align: center;
-    margin: 30px auto;
+    margin: auto;
     padding: 10px;
 }
 
@@ -212,6 +228,7 @@ section{
 
 .servicos{
     margin: auto;
+    margin-bottom: 200px;
 }
 
 .servicos h2{
@@ -318,6 +335,28 @@ footer{
 
 .segunda{
     padding-bottom: 10px;
+}
+
+/* animacao */
+
+[data-animate] {
+    opacity: 0;
+    transition: .8s;
+}
+
+[data-animate="left"]{
+    opacity: 0;
+    transform: translate3d(0px, -50px, 0px);
+}
+
+[data-animate="rigth"]{
+    opacity: 0;
+    transform: translate3d(0px, 50px, 0px);
+}
+
+[data-animate].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
 
 /* keyframes */
