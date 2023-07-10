@@ -158,6 +158,11 @@ section{
     transition: 1s;
 }
 
+.nome .botoes h2 a{
+    text-decoration: none;
+    color: black;
+}
+
 .nome p{
     margin-top: 25px;
     margin-bottom: 15px;
